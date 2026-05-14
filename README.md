@@ -1,6 +1,6 @@
 # VDI 2230 Bolt Joint Analysis Tool
 
-A desktop calculation tool for high-duty bolted joints following **VDI 2230 Blatt 1:2015**, developed for use in the propulsion and structures teams at **WARR Rocketry, TU München**.
+A desktop calculation tool for high-duty bolted joints following **VDI 2230 Blatt 1:2015**.
 
 The source code is not public as this is an internal team tool.
 
@@ -8,7 +8,7 @@ The source code is not public as this is an internal team tool.
 
 ## Background
 
-Standard bolt calculators assume steel-on-steel joints and off-the-shelf threads. Aerospace components frequently don't — Inconel fasteners in aluminium or copper housings, custom fine threads, thin titanium flanges. Getting the preload and safety factors wrong in those configurations has real consequences, so the team needed a tool that calculates everything from first principles rather than relying on lookup tables or rule-of-thumb defaults.
+Standard bolt calculators assume steel-on-steel joints and off-the-shelf threads. Aerospace components frequently don't — Inconel fasteners in aluminium or copper housings, custom fine threads, thin titanium flanges. Getting the preload and safety factors wrong in those configurations has real consequences, so the tool calculates everything from first principles rather than relying on lookup tables or rule-of-thumb defaults.
 
 VDI 2230 is the German engineering standard for systematic calculation of high-duty bolted joints. Its calculation sequence (R1–R13) covers preload, bolt and plate compliance, load distribution, stress verification, and joint opening — about as thorough as hand calculation gets before FEM.
 
@@ -53,13 +53,21 @@ Supported joint configurations:
 
 ## Status
 
-Blatt 1 (single joint) is complete and in use by the team.
+Blatt 1 (single joint) is complete.
 
 A **Blatt 2 extension** for arbitrary multi-bolt group patterns under full 3D external loads (Fz, Fx, Fy, Mx, My, Mz) is currently in development. It will distribute loads across the bolt group per VDI 2230 Blatt 2 and feed the critical bolt's loads into the existing single-joint engine automatically.
 
 ---
 
 ## Screenshots
+
+**Bolt geometry input:**
+
+![Bolt geometry](screenshots/schraubengeometrie.png)
+
+**Joint geometry input:**
+
+![Joint geometry](screenshots/verbindungsgeometrie.png)
 
 **Calculation results** — full R1–R13 output with safety factors:
 
@@ -69,7 +77,7 @@ A **Blatt 2 extension** for arbitrary multi-bolt group patterns under full 3D ex
 
 ![Layers and materials](screenshots/schichten%20und%20materialien.png)
 
-**Goal seeker** — reverse solver: specify a target safety factor, get the required geometry or preload:
+**Goal seeker** — reverse solver: find the geometry or load that meets a target surface pressure:
 
 ![Goal seeker](screenshots/goal%20seeker.png)
 
