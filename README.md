@@ -73,6 +73,10 @@ A **Blatt 2 extension** for arbitrary multi-bolt group patterns under full 3D ex
 
 ![Goal seeker](screenshots/goal%20seeker.png)
 
+**Test suite** — 156 tests covering physical invariants, norm examples, and edge cases; run against every change:
+
+![Verification](screenshots/verification.png)
+
 ---
 
 ## Tech
