@@ -61,7 +61,17 @@ A **Blatt 2 extension** for arbitrary multi-bolt group patterns under full 3D ex
 
 ## Screenshots
 
-*Add screenshots here — suggested: one showing inputs, one showing R1–R13 results, one showing thermal tab.*
+**Calculation results** — full R1–R13 output with safety factors:
+
+![Calculation results](screenshots/berechnungsergebnisse.png)
+
+**Multi-material plate stack** — each layer defined independently with its own material and E-modulus:
+
+![Layers and materials](screenshots/schichten%20und%20materialien.png)
+
+**Goal seeker** — reverse solver: specify a target safety factor, get the required geometry or preload:
+
+![Goal seeker](screenshots/goal%20seeker.png)
 
 ---
 
